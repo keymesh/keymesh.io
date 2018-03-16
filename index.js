@@ -4,12 +4,11 @@
   var isMobile = simplyDetectMobileAndTablet();
 
   if (!isMobile) {
+    var introSection = document.getElementById('intro')
+    var getStartedButton = '<a class="get-started" href="https://beta.keymesh.io/register">Sounds Good, Power Me Up!</a>'
+    introSection.insertAdjacentHTML('beforeend', getStartedButton)
     return;
   }
-
-  // remove get-started button
-  var getStartedButton = document.querySelector('.get-started');
-  getStartedButton.remove();
 
   main();
 

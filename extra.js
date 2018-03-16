@@ -24,7 +24,7 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    if (fetch) {
+    if (!fetch) {
       return;
     }
 

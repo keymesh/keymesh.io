@@ -1,0 +1,13 @@
+lib
+.idea/
+.vscode/
+node_modules/
+npm-debug.log
+yarn-error.log
+.DS_Store
+*.DS_Store
+*.logs
+*.swp
+*.swo
+*.tgz
+yarn.lock

@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - aws s3 sync --delete --exclude '.git/*' ./ s3://${S3_BUCKET_NAME}/ --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
+  post_build:
+    commands:
+      - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths '/*'

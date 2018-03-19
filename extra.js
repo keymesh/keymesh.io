@@ -5,7 +5,8 @@
   var content = (
     '<section id="alert">' +
     '  <p class="alert-text">' +
-    '    Get notified when the mobile version comes out!' +
+    '    KeyMesh currently works in desktop Chrome with MetaMask installed.' +
+    '    We can notify you when the mobile version is ready.' +
     '  </p>' +
     '  <form action="#" id="email-form">' +
     '    <input placeholder="you@example.com" required id="email-input" type="email">' +

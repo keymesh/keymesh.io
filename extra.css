@@ -7,8 +7,10 @@
 }
 
 .alert-text {
-  font-weight: bolder;
   margin: .5rem 0;
+  border: 1px solid #ffe58f;
+  background-color: #fffbe6;
+  padding: 8px 15px;
 }
 
 #email-form {

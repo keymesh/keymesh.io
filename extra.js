@@ -20,7 +20,6 @@
 
   var form = document.getElementById('email-form');
   var input = document.getElementById('email-input');
-  var button = document.getElementById('email-submit');
   var alert = document.getElementById('alert');
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -38,7 +37,7 @@
       }),
       method: 'PUT',
       mode: 'cors',
-    })
+    });
 
     alert.innerHTML = (
       '<p class="thanks-text">' +
@@ -49,5 +48,5 @@
     setTimeout(function() {
       alert.remove();
     }, 3000);
-  })
+  });
 })();
